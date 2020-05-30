@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 using System;
 
 namespace UnityEditor.TestTools.TestRunner.TestRun
@@ -7,14 +6,4 @@ namespace UnityEditor.TestTools.TestRunner.TestRun
     {
         
     }
-=======
-using System;
-
-namespace UnityEditor.TestTools.TestRunner.TestRun
-{
-    internal class TestRunCanceledException : Exception
-    {
-        
-    }
->>>>>>> b39c852c342acbba552dd43c7adf66274a2a43b0
 }

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -37,43 +36,3 @@ namespace UnityEditor.U2D.Animation
         }
     }
 }
-=======
-using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
-using UnityEngine.U2D;
-
-namespace UnityEditor.U2D.Animation
-{
-    internal static class TransformExtensions
-    {
-        public static Vector3 GetScaledRight(this Transform transform)
-        {
-            return transform.localToWorldMatrix.MultiplyVector(Vector3.right);
-        }
-
-        public static Vector3 GetScaledUp(this Transform transform)
-        {
-            return transform.localToWorldMatrix.MultiplyVector(Vector3.up);
-        }
-
-        public static bool IsDescendentOf(this Transform transform, Transform ancestor)
-        {
-            if (ancestor != null)
-            {
-                var parent = transform.parent;
-
-                while (parent != null)
-                {
-                    if (parent == ancestor)
-                        return true;
-
-                    parent = parent.parent;
-                }
-            }
-
-            return false;
-        }
-    }
-}
->>>>>>> b39c852c342acbba552dd43c7adf66274a2a43b0
