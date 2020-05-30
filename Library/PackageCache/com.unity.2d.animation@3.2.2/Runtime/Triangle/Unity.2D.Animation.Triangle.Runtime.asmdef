@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "Unity.2D.Animation.Triangle.Runtime",
     "references": [],
@@ -5,4 +6,13 @@
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false
+=======
+{
+    "name": "Unity.2D.Animation.Triangle.Runtime",
+    "references": [],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+>>>>>>> b39c852c342acbba552dd43c7adf66274a2a43b0
 }

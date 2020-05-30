@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // -----------------------------------------------------------------------
 // <copyright file="ISmoother.cs">
 // Triangle.NET code by Christian Woltering, http://triangle.codeplex.com/
@@ -18,3 +19,25 @@ namespace UnityEngine.U2D.Animation.TriangleNet
         void Smooth(IMesh mesh, int limit);
     }
 }
+=======
+// -----------------------------------------------------------------------
+// <copyright file="ISmoother.cs">
+// Triangle.NET code by Christian Woltering, http://triangle.codeplex.com/
+// </copyright>
+// -----------------------------------------------------------------------
+
+namespace UnityEngine.U2D.Animation.TriangleNet
+    .Smoothing
+{
+    using Animation.TriangleNet.Meshing;
+
+    /// <summary>
+    /// Interface for mesh smoothers.
+    /// </summary>
+    internal interface ISmoother
+    {
+        void Smooth(IMesh mesh);
+        void Smooth(IMesh mesh, int limit);
+    }
+}
+>>>>>>> b39c852c342acbba552dd43c7adf66274a2a43b0

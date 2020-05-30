@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 using System.Collections.Generic;
 
 namespace UnityEngine.TestTools.Utils
@@ -20,3 +21,27 @@ namespace UnityEngine.TestTools.Utils
         }
     }
 }
+=======
+using System.Collections.Generic;
+
+namespace UnityEngine.TestTools.Utils
+{
+    public class Vector3ComparerWithEqualsOperator : IEqualityComparer<Vector3>
+    {
+        private static readonly Vector3ComparerWithEqualsOperator m_Instance = new Vector3ComparerWithEqualsOperator();
+        public static Vector3ComparerWithEqualsOperator Instance { get { return m_Instance; } }
+
+        private Vector3ComparerWithEqualsOperator() {}
+
+        public bool Equals(Vector3 expected, Vector3 actual)
+        {
+            return expected == actual;
+        }
+
+        public int GetHashCode(Vector3 vec3)
+        {
+            return 0;
+        }
+    }
+}
+>>>>>>> b39c852c342acbba552dd43c7adf66274a2a43b0

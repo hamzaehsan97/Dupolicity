@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "name": "Unity.2D.SpriteShape.Editor",
     "references": [
@@ -18,4 +19,26 @@
     "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": []
+=======
+{
+    "name": "Unity.2D.SpriteShape.Editor",
+    "references": [
+        "Unity.InternalAPIEditorBridge.001",
+        "Unity.2D.Common.Editor",
+        "Unity.2D.Common.Runtime",
+        "Unity.2D.SpriteShape.Runtime",
+        "Unity.2D.Path.Editor"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+>>>>>>> b39c852c342acbba552dd43c7adf66274a2a43b0
 }

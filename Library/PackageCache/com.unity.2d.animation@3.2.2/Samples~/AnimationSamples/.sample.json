@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 {
     "displayName": "2D Animation Samples",
 	"interactiveImport": "true",
     "description": "Various examples demonstrating the usage of 2D Animation tools for different outcomes.",
 }
+=======
+{
+    "displayName": "2D Animation Samples",
+	"interactiveImport": "true",
+    "description": "Various examples demonstrating the usage of 2D Animation tools for different outcomes.",
+}
+>>>>>>> b39c852c342acbba552dd43c7adf66274a2a43b0

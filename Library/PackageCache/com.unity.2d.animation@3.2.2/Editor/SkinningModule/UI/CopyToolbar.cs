@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 using System;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -46,3 +47,53 @@ namespace UnityEditor.U2D.Animation
         }
     }
 }
+=======
+using System;
+using UnityEngine;
+using UnityEngine.UIElements;
+using UnityEngine.U2D.Common;
+
+namespace UnityEditor.U2D.Animation
+{
+    internal class CopyToolbar : Toolbar
+    {
+        public class CopyToolbarFactory : UxmlFactory<CopyToolbar, CopyToolbarUxmlTraits> {}
+        public class CopyToolbarUxmlTraits : VisualElement.UxmlTraits {}
+
+        public event Action onDoCopy = () => {};
+        public event Action onDoPaste = () => {};
+
+        public CopyToolbar()
+        {
+            styleSheets.Add(ResourceLoader.Load<StyleSheet>("SkinningModule/CopyToolbarStyle.uss"));
+        }
+
+        public void DoCopy()
+        {
+            onDoCopy();
+        }
+
+        public void DoPaste()
+        {
+            onDoPaste();
+        }
+
+        public void BindElements()
+        {
+            var copyButton = this.Q<Button>("Copy");
+            copyButton.clickable.clicked += DoCopy;
+
+            var pasteButton = this.Q<Button>("Paste");
+            pasteButton.clickable.clicked += DoPaste;
+        }
+
+        public static CopyToolbar GenerateFromUXML()
+        {
+            var visualTree = ResourceLoader.Load<VisualTreeAsset>("SkinningModule/CopyToolbar.uxml");
+            var clone = visualTree.CloneTree().Q<CopyToolbar>("CopyToolbar");
+            clone.BindElements();
+            return clone;
+        }
+    }
+}
+>>>>>>> b39c852c342acbba552dd43c7adf66274a2a43b0

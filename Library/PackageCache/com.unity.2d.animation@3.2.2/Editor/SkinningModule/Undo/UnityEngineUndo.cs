@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 using UnityEngine;
 using UnityEditor;
 
@@ -53,3 +54,60 @@ namespace UnityEditor.U2D.Animation
         }
     }
 }
+=======
+using UnityEngine;
+using UnityEditor;
+
+namespace UnityEditor.U2D.Animation
+{
+    internal class UnityEngineUndo : IUndo
+    {
+        public void RecordObject(object o, string name)
+        {
+            var obj = o as UnityEngine.Object;
+            if (obj != null)
+                Undo.RecordObject(obj, name);
+        }
+
+        public void RegisterCompleteObjectUndo(object o, string name)
+        {
+            var obj = o as UnityEngine.Object;
+            if (obj != null)
+                Undo.RegisterCompleteObjectUndo(obj, name);
+        }
+
+        public void RegisterCompleteObjectUndo(object[] o, string name)
+        {
+            var obj = o as UnityEngine.Object[];
+            if (obj != null)
+                Undo.RegisterCompleteObjectUndo(obj, name);
+        }
+
+        public void RegisterCreatedObjectUndo(object o, string name)
+        {
+            var obj = o as UnityEngine.Object;
+            if (obj != null)
+                Undo.RegisterCreatedObjectUndo(obj, name);
+        }
+
+        public void DestroyObjectImmediate(object o)
+        {
+            var obj = o as UnityEngine.Object;
+            if (obj != null)
+                Undo.DestroyObjectImmediate(obj);
+        }
+
+        public void ClearUndo(object o)
+        {
+            var obj = o as UnityEngine.Object;
+            if (obj != null)
+                Undo.ClearUndo(obj);
+        }
+
+        public void IncrementCurrentGroup()
+        {
+            Undo.IncrementCurrentGroup();
+        }
+    }
+}
+>>>>>>> b39c852c342acbba552dd43c7adf66274a2a43b0
