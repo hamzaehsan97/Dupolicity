@@ -14,8 +14,13 @@ The following libraries are required to recreate this app. You can download thes
 
 
 
-## Results
-
+## Color Palatte (hex codes)
+044389 - Red
+FF8A5B - Less Red
+FE4A49 - Blue
+53D8FB - Less Blue
+FEFCFB - White
+F6E8EA - Less White
 
 ## Built With
 
