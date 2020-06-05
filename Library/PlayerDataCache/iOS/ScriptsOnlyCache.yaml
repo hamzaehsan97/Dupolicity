@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - MainMenu
     - Republic
     - ShowValueScript
+    - StartPagePlay
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
@@ -35,6 +36,57 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
+    Assets/Scenes/Game.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11226}
+    - Class: 114
+      Script: {instanceID: 11514}
+    - Class: 114
+      Script: {instanceID: 11568}
+    - Class: 114
+      Script: {instanceID: 12232}
+    - Class: 114
+      Script: {instanceID: 13192}
+    - Class: 114
+      Script: {instanceID: 13688}
+    - Class: 114
+      Script: {instanceID: 14298}
+    - Class: 114
+      Script: {instanceID: 14340}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/MainMenu.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -57,29 +109,29 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11220}
+      Script: {instanceID: 11226}
     - Class: 114
-      Script: {instanceID: 11562}
+      Script: {instanceID: 11568}
     - Class: 114
-      Script: {instanceID: 11742}
+      Script: {instanceID: 11748}
     - Class: 114
-      Script: {instanceID: 12224}
+      Script: {instanceID: 12232}
     - Class: 114
-      Script: {instanceID: 12276}
+      Script: {instanceID: 12284}
     - Class: 114
-      Script: {instanceID: 12922}
+      Script: {instanceID: 12930}
     - Class: 114
-      Script: {instanceID: 13266}
+      Script: {instanceID: 13278}
     - Class: 114
-      Script: {instanceID: 13284}
+      Script: {instanceID: 13296}
     - Class: 114
-      Script: {instanceID: 13576}
+      Script: {instanceID: 13588}
     - Class: 114
-      Script: {instanceID: 13676}
+      Script: {instanceID: 13688}
     - Class: 114
-      Script: {instanceID: 13950}
+      Script: {instanceID: 13962}
     - Class: 114
-      Script: {instanceID: 14286}
+      Script: {instanceID: 14298}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -114,29 +166,33 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11220}
+      Script: {instanceID: 11226}
     - Class: 114
-      Script: {instanceID: 11508}
+      Script: {instanceID: 11514}
     - Class: 114
-      Script: {instanceID: 11562}
+      Script: {instanceID: 11568}
     - Class: 114
-      Script: {instanceID: 12224}
+      Script: {instanceID: 11920}
     - Class: 114
-      Script: {instanceID: 13266}
+      Script: {instanceID: 12232}
     - Class: 114
-      Script: {instanceID: 13576}
+      Script: {instanceID: 12930}
     - Class: 114
-      Script: {instanceID: 13676}
+      Script: {instanceID: 13190}
     - Class: 114
-      Script: {instanceID: 14286}
+      Script: {instanceID: 13192}
     - Class: 114
-      Script: {instanceID: 14328}
+      Script: {instanceID: 13278}
     - Class: 114
-      Script: {instanceID: 14998}
+      Script: {instanceID: 13588}
     - Class: 114
-      Script: {instanceID: 15000}
+      Script: {instanceID: 13688}
     - Class: 114
-      Script: {instanceID: 15002}
+      Script: {instanceID: 14298}
+    - Class: 114
+      Script: {instanceID: 14340}
+    - Class: 114
+      Script: {instanceID: 16362}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -318,6 +374,12 @@ ScriptsOnlyBuild:
     className: RectMask2D
   - hash:
       serializedVersion: 2
+      Hash: df65a54d96ed8251dbb8b16389fc852d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Republic
+  - hash:
+      serializedVersion: 2
       Hash: d941ab6dd93d37ffdf2277f2ea2375a0
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -448,6 +510,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShowValueScript
+  - hash:
+      serializedVersion: 2
+      Hash: df65a54d96ed8251dbb8b16389fc852d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Democratic
   - hash:
       serializedVersion: 2
       Hash: 71b711096c6c32621c1d4c02310898b7
@@ -642,24 +716,13 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: df65a54d96ed8251dbb8b16389fc852d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Republic
-  - hash:
-      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ShowValueScript
-  - hash:
-      serializedVersion: 2
-      Hash: df65a54d96ed8251dbb8b16389fc852d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Democratic
+    className: StartPagePlay
   platform: 9
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/StartPage.unity
-  playerPath: /Users/hamzaehsan/Projects/buildTest3
+  - Assets/Scenes/Game.unity
+  playerPath: /Users/hamzaehsan/Projects/buildTest4
