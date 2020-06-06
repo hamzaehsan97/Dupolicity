@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Democratic
+    - GameManagerScript
     - MainMenu
     - Republic
     - StartPagePlay
@@ -56,29 +57,29 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11192}
+      Script: {instanceID: 15212}
     - Class: 114
-      Script: {instanceID: 11480}
+      Script: {instanceID: 15498}
     - Class: 114
-      Script: {instanceID: 11534}
+      Script: {instanceID: 15552}
     - Class: 114
-      Script: {instanceID: 11714}
+      Script: {instanceID: 15730}
     - Class: 114
-      Script: {instanceID: 12198}
+      Script: {instanceID: 16210}
     - Class: 114
-      Script: {instanceID: 12250}
+      Script: {instanceID: 16260}
     - Class: 114
-      Script: {instanceID: 12896}
+      Script: {instanceID: 16902}
     - Class: 114
-      Script: {instanceID: 13244}
+      Script: {instanceID: 17244}
     - Class: 114
-      Script: {instanceID: 13262}
+      Script: {instanceID: 17260}
     - Class: 114
-      Script: {instanceID: 13656}
+      Script: {instanceID: 17648}
     - Class: 114
-      Script: {instanceID: 13932}
+      Script: {instanceID: 17924}
     - Class: 114
-      Script: {instanceID: 14268}
+      Script: {instanceID: 18256}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -113,27 +114,27 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11192}
+      Script: {instanceID: 15212}
     - Class: 114
-      Script: {instanceID: 11480}
+      Script: {instanceID: 15498}
     - Class: 114
-      Script: {instanceID: 11534}
+      Script: {instanceID: 15552}
     - Class: 114
-      Script: {instanceID: 11886}
+      Script: {instanceID: 15898}
     - Class: 114
-      Script: {instanceID: 12198}
+      Script: {instanceID: 16210}
     - Class: 114
-      Script: {instanceID: 12896}
+      Script: {instanceID: 16902}
     - Class: 114
-      Script: {instanceID: 13158}
+      Script: {instanceID: 17166}
     - Class: 114
-      Script: {instanceID: 13656}
+      Script: {instanceID: 17648}
     - Class: 114
-      Script: {instanceID: 13912}
+      Script: {instanceID: 17904}
     - Class: 114
-      Script: {instanceID: 14268}
+      Script: {instanceID: 18256}
     - Class: 114
-      Script: {instanceID: 14310}
+      Script: {instanceID: 18298}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -150,7 +151,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
-    Assets/Scenes/3.unity:
+    Assets/Scenes/2.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -168,19 +169,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11192}
+      Script: {instanceID: 15212}
     - Class: 114
-      Script: {instanceID: 11480}
+      Script: {instanceID: 15498}
     - Class: 114
-      Script: {instanceID: 11534}
+      Script: {instanceID: 15552}
     - Class: 114
-      Script: {instanceID: 12198}
+      Script: {instanceID: 15626}
     - Class: 114
-      Script: {instanceID: 12896}
+      Script: {instanceID: 16210}
     - Class: 114
-      Script: {instanceID: 13656}
+      Script: {instanceID: 16902}
     - Class: 114
-      Script: {instanceID: 14268}
+      Script: {instanceID: 17648}
+    - Class: 114
+      Script: {instanceID: 18256}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -294,6 +297,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: df65125cbd0e19e315753048da461a3a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManagerScript
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
@@ -712,5 +721,5 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/0.unity
   - Assets/Scenes/1.unity
-  - Assets/Scenes/3.unity
-  playerPath: /Users/hamzaehsan/Projects/buildTest5
+  - Assets/Scenes/2.unity
+  playerPath: /Users/hamzaehsan/Projects/buildTest6
