@@ -6,5 +6,5 @@ Logs/
 *.vscode
 
 # ignore Library folder to avoid merge errors
-Library/**
+Library/
 # **Library/*.so
