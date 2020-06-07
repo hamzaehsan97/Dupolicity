@@ -7,4 +7,6 @@ Logs/
 
 # ignore Library folder to avoid merge errors
 Library/
-# **Library/*.so
+
+# ignore .DS_Store
+*.DS_Store
