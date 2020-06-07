@@ -3,3 +3,7 @@
 
 # ignore all vscode files
 *.vscode
+
+# ignore Library folder to avoid merge errors
+Library/**
+# **Library/*.so

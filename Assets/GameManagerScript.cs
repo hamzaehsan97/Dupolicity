@@ -4,6 +4,8 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
+using System.Net;
 
 public class GameManagerScript : MonoBehaviour
 {
@@ -30,6 +32,7 @@ public class GameManagerScript : MonoBehaviour
     public int promptNum=0;
     public int roundNum=0;
     public int score=50;
+    public int numQuestions=0;
 
     void Start() {
         
@@ -37,6 +40,7 @@ public class GameManagerScript : MonoBehaviour
                 unansweredQuestions = questions.ToList<Questions>();
                 unusedState = stateList.ToList<States>();
         }
+        numQuestions=unansweredQuestions.Count;
         getRandomQuestion();
         updatePrompt();
         updateScore();
@@ -47,11 +51,17 @@ public class GameManagerScript : MonoBehaviour
 
     void getRandomQuestion(){
        
-        
+        if(unansweredQuestions.Count == 0){
+            endGame();
+        }else{
         int randomQuestionIndex = Random.Range(0, unansweredQuestions.Count);
         currentQuestion = unansweredQuestions[randomQuestionIndex];
         //Find a better place to remove the current question. Preferably after the question is answered 
-        //unansweredQuestions.RemoveAt(randomQuestionIndex);
+        unansweredQuestions.RemoveAt(randomQuestionIndex);}
+    }
+
+    void endGame(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     void getRandomState(){
@@ -59,14 +69,18 @@ public class GameManagerScript : MonoBehaviour
         roundTitleText.text = "ROUND "+ roundNum;
         int randomStateIndex = Random.Range(0, unusedState.Count);
         currentState = unusedState[randomStateIndex];
-        stateTitleText.text = currentState.stateName;
+        stateTitleText.text = "State: "+currentState.stateName;
+        unusedState.RemoveAt(randomStateIndex);
     }
 
     public void updatePrompt(){
         promptNum = promptNum + 1;
         getRandomQuestion();
+        if(promptNum%(numQuestions / 3)==0){
+            getRandomState();
+        }
         promptText.text = currentQuestion.prompt;
-        promptNumText.text = "Prompt Number "+promptNum+"/3";
+        promptNumText.text = promptNum+"/"+numQuestions;
         
     }
 
@@ -102,9 +116,4 @@ public class GameManagerScript : MonoBehaviour
         updateScore();
         updatePrompt();
     }
-
-
-    
 }
-
-
